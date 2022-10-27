@@ -1,0 +1,38 @@
+<div class="card-body">
+    <div class="table-responsive">
+      <div id="dataTable_wrappe1" class="dataTables_wrapper dt-bootstrap4">        
+        <div class="row">
+          <div class="col-sm-12">
+            <table class="table table-bordered dataTable" id="dataTable1" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info"
+              style="width: 100%;">
+              <thead>
+                <tr role="row">
+                  <th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending"
+                    style="width: 157px;">ID</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending"
+                    style="width: 267px;"> Name</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending"
+                    style="width: 113px;">User Name</th>
+                  <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending"
+                    style="width: 51px;">Email</th>
+                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending"
+                    style="width: 51px;">Phone</th>
+                    <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending"
+                    style="width: 51px;">Website</th>
+              </thead>
+              <tbody>
+                <tr role="row" class="odd" *ngFor="let r of userList">
+                  <td class="sorting_1">{{r.id}}</td>
+                  <td>{{r.name}}</td>
+                  <td>{{r.username}}</td>
+                  <td>{{r.email}}</td>
+                  <td>{{r.phone}}</td>
+                  <td>{{r.website}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>
